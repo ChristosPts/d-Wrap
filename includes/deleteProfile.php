@@ -31,7 +31,7 @@ if(isset($_POST["submit"])){
         if($uType =='Admin' && $uid != $_SESSION["userid"]){
             
             $message = "Your account has been deleted for violating our terms of service";
-            $headers = "From: chpidevtest@gmail.com \r\n";
+            $headers = "From: /*Enter your email here*/ \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($uMail,'Account Deletion',$message,$headers);
@@ -45,7 +45,7 @@ if(isset($_POST["submit"])){
         else if($uType =='User' || ($uType =='Admin' && $uid == $_SESSION["userid"])){
             
             $message = "Your account has been deleted, we're sad to see you go";
-            $headers = "From: chpidevtest@gmail.com \r\n";
+            $headers = "From: /*Enter your email here*/ \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($uMail,'Account Deletion',$message,$headers);
