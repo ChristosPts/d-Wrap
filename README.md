@@ -2,7 +2,7 @@
 
 ### Languages: HTML/CSS/Javascript/PHP/Sql
 
-**dWrap** is a simple image hosting website for desktop wallpapers with the purpose of showcasing the basic functions websites with the same category. 
+**dWrap** is a simple image hosting website for desktop wallpapers. 
 
 Visitors are split into three categories: 
 1) Guests which are any visitors without an account or have not logged in. 
