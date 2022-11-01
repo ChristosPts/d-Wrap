@@ -2,7 +2,7 @@
 
 ### Languages: HTML/CSS/Javascript/PHP/Sql
 
-**dWrap** is a simple image hosting website for desktop wallpapers. 
+**dWrap** is a simple image hosting website for desktop wallpapers. It allows visitors to browse, upload, download, like and delete pictures, create/delete accounts etc.   
 
 Visitors are split into three categories: 
 1) Guests which are any visitors without an account or have not logged in. 
@@ -30,7 +30,7 @@ Each category has the following permissions
 - Delete profiles of other users
 
 **Disclaimer**
-In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php,signup.php the appropriate email address needs to be given for the mail service to work
+In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php and signup.php the appropriate email address needs to be given for the local mail service to work
 
 
 
