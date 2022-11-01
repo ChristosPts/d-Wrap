@@ -40,14 +40,7 @@ html {
     color:  rgb(26, 185, 253);
     transition: 0.15s;
 }
-
  
-
-/*Remove scrollbar from select tags
-#dropdown { 
-    scrollbar-width: none;
-    overflow-y: hidden;  
-}*/
 /*========================================*/
 
 .uploaderCont img{
@@ -149,12 +142,14 @@ html {
     padding: 6px;
     color: azure;
     box-shadow: 1px 1px 5px black;
+    width: auto;
+    height: auto;
 
 }
 
 .vDelBtn button:hover{
     background-color: rgb(75, 75, 75);
-    color: brown;
+    color: rgb(255, 0, 0);
     
 }
 
@@ -206,7 +201,7 @@ html {
     margin-bottom: 50px;
     min-height: 500px;
     align-items: center;
-    background-color: rgba(247, 242, 242, 0.44);
+    background-color: rgba(159, 159, 159, 0.382);
     border-radius: 20px;
 }
 

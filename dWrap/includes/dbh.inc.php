@@ -3,7 +3,7 @@
 $serverName = "localhost";
 $dbUserame = "root";
 $dbPassword = "";
-$dbName = "dwrapdb";
+$dbName = "dWrap";
 
 $conn = mysqli_connect($serverName,$dbUserame,$dbPassword,$dbName);
 

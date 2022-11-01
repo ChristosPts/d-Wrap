@@ -14,10 +14,25 @@ if(isset($_POST["submit"])){
 
     $Uid= $_GET["imgUid"];
 
+    
+    $select = mysqli_query($conn,"SELECT * FROM images WHERE imgPath = '$imgPath'");
+    if(mysqli_num_rows($select) >0){
+        $fetch = mysqli_fetch_assoc($select);
+        $imgId =  $fetch['imgId'];
+    } else {
+        $URL="../index?page=1&error=imgError";
+        header('location:'.$URL.''); 
+        exit();
+    }
+
     //if user doesnt exit delete img and go back to index 
     if($Uid == ''){
         $query = "DELETE FROM images WHERE imgPath = '$imgPath'";
         mysqli_query($conn,$query);
+
+        $query = "DELETE FROM img_categories WHERE imgId = '$imgId'";
+        mysqli_query($conn,$query);
+
         $URL="../index?page=1&success=success";
         header('location:'.$URL.''); 
         exit();
@@ -39,10 +54,13 @@ if(isset($_POST["submit"])){
     else {
         $query = "DELETE FROM images WHERE imgPath = '$imgPath'";
         mysqli_query($conn,$query);
+
+        $query = "DELETE FROM img_categories WHERE imgId = '$imgId'";
+        mysqli_query($conn,$query);
     
         if($uType =='Admin' && $uType !== $userT){
             $message = "One of your images has been deleted for violating our terms of service";
-            $headers = "From: /*enter your email  address here*/ \r\n";
+            $headers = "From: chpidevtest@gmail.com \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($uMail,'Image Deletion',$message,$headers);
@@ -52,7 +70,7 @@ if(isset($_POST["submit"])){
            
             exit();
         } else {
-            $URL="../profile?user=".$usern."&success=success";
+            $URL="../profile?user=".$usern."&page=1&success=success";
             header('location:'.$URL.'');
             exit();
         } 
