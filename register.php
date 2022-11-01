@@ -36,7 +36,7 @@
              <h2 class = "fs-2 fw-bold">Create an account</h2>
              <div class = "thumbs"><img id="logInimg"></div>
 
-                <form action = "includes/register.php" method="post">                    
+                <form action = "includes/signup.php" method="post">                    
                 <div class="form-group">
                         <span class = "input-icon"><i class="bi bi-person-circle"></i></span>
                         <input type = "text" name = "Username" placeholder = "Username">
