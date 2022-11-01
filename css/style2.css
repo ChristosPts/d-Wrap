@@ -1,0 +1,377 @@
+.bgBody {
+    background-color: grey;
+    background-image: url(../uploads/back/in1.svg); 
+    background-position: center ;
+    height: 100vh;
+}
+
+ /*-------Login Form--------*/
+.logRegForm{
+    padding-top: 50px;
+} 
+
+.logRegForm .form-group input, .changePass .form-group input{
+     border-radius: 4px;
+     border: none;
+     height: 36px;
+     width:240px;
+     text-align: left;
+     padding-left: 28px;
+} 
+
+.logRegForm .form-group{
+    padding-bottom: 10px;
+}
+
+.logRegForm .thumbs img{
+    max-width: 240px;
+    min-width: 240px;
+    max-height: 180px;
+    min-height: 180px;
+    margin-bottom: 15px;
+}
+
+.logRegForm button{
+    background-color: rgb(96,106,133);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    height: 36px;
+    width:240px;
+    line-height: 18px;
+}
+
+.logRegForm button:hover{
+  background-color: rgb(0, 179, 255);
+  font-weight: bold;
+  color: white;
+}
+
+.logRegForm .input-icon i {
+    position: absolute;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+  
+.logRegForm .input-icon{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.logRegForm .form_icon img{
+    background-color: aliceblue;
+    outline: 1px solid rgb(0, 0, 0);
+    max-width: 240px;
+    min-width: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    margin-bottom: 15px;    
+    border-radius: 100%;
+}
+/*======================================*/
+ 
+/*-------Forgot password--------*/
+
+.recBody{
+    background-image: url(../uploads/back/in5.svg); 
+    background-position: center ;
+}
+
+.pwdRec, .pwdRes{
+    padding-top: 60px;
+} 
+
+.pwdRec img{
+    background-color:rgb(117, 148, 170);
+    border-radius: 100% 100%;
+    width: auto !important;
+    min-width: 280px;
+} 
+
+.pwdRec .form-group{
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.pwdRec button, .pwdRes button{
+  background-color:rgb(117, 148, 170); 
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:255px;
+  height: 36px;
+  line-height: 18px;
+  border: none;
+}
+
+.pwdRec button:hover, .pwdRes button:hover{
+    background-color: rgb(122, 209, 238);
+    color: white;
+    font-weight: bold;
+}
+
+.pwdRec input{
+    width:255px;
+    margin-top: 16px;
+    border-radius: 4px;
+    border: none;
+    height: 32px;
+    text-align: left;
+    padding-left: 28px;
+    margin-bottom: 10px;
+} 
+
+.pwdRes input{
+    width:255px;
+    border-radius: 4px;
+    border: none;
+    height: 32px;
+    text-align: left;
+    padding-left: 28px;
+    margin-bottom: 10px;
+} 
+
+.pwdRec .input-icon i{
+    position: absolute;
+    padding-left: 6px;
+    padding-top: 20.5px;
+}
+
+ .pwdRes .input-icon i{
+    position: absolute;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+.changePwdForm i{
+    position: absolute;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+ /*======================================*/
+
+ /* ------- Terms Of Service ------- */
+ .tosCont .container{
+    background-color: rgb(255, 255, 255);
+    min-width: 95%;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+ }
+
+ .tosCont h3,h4{
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline;
+ }
+
+ .tosCont h5,h6{
+    font-weight: bold;
+ }
+/*======================================*/
+
+/*------Img view------*/
+.view{
+    background-color: rgb(106, 106, 106);
+}
+
+.viewForm{
+     padding-top: 10px;
+}
+
+.viewForm .picDisplay{
+    margin: 10px;
+    max-width:88%;
+    padding: 10px;
+}
+
+ .viewForm .picDisplay img{
+    max-width:100%;
+    max-height:100%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.745);
+    border-radius: 6px;
+ }
+
+.profileCont{
+    border-right: 1px;
+    border-color: rgb(67, 67, 67);
+    border-style: solid;
+    border-radius: 2px;
+}
+   
+.profileCont .uploader img, .profilepic img{
+    object-fit: cover;
+    max-width: 70px;
+    max-height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 2px;
+    border-style: outset;
+    border-color: rgb(255, 255, 254);
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+.uploader{
+    color: aliceblue;
+}
+
+.uploader a{
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.uploader a:hover {
+    color: rgb(26, 185, 253);
+}
+
+.likeBtn button{
+   background: none;
+   border:none;
+   height: 20px;
+   color: aliceblue;
+   font-size: 30px;
+   text-shadow: 1px 1px 1px rgb(30, 28, 28);
+}
+
+.likeBtn button:hover{
+    color: rgb(66, 140, 252);
+}
+
+.downBtn button{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    width: auto !important; 
+    border-radius: 4px;
+    font-size: auto;
+}
+
+.downBtn button:hover {
+    background-color: rgb(251, 253, 255);
+    color: DodgerBlue;
+}
+  
+.reportForm select{
+    padding: 2px;
+    width: auto !important; 
+    font-size: auto !important; 
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 15px black;
+}
+
+.reportForm button{
+    min-width: 96px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(9, 8, 8);
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 15px black;
+    margin-left: 6px;
+}
+
+.reportForm button:hover{
+    background-color: rgb(178, 173, 173);
+}
+
+.deleteImg button{
+    background-color: rgb(67, 67, 67);
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.deleteImg button:hover{
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+a{ color:aliceblue; }
+
+.regLink a:hover,.logRegForm a:hover{color: rgb(66, 183, 255); }   
+
+.emptyMsg{
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.pagination{
+    color: rgb(255, 255, 255);
+    margin: 6px;
+    padding-top: 8px;
+    width: auto !important;
+}
+
+.pageBorder{
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(107, 107, 107);
+    border-width: 2px;
+    width: auto !important;
+    min-width: 250px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.pagination a{
+    text-decoration: none;
+    width: auto !important;
+    margin: 6px;
+    font-size: 18px;
+}
+
+.pagination a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.pageBorder button{
+    background-color:  rgba(99, 99, 99, 0.288);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding-right:8px;
+    padding-left:8px;
+}
+
+.pageBorder button:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.activePage button{
+    background-color:  rgb(26, 185, 253);
+    border-radius: 50px;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.errorMsgs{
+ color: aliceblue;
+}
+
+#wrapper {
+    overflow-x:hidden !important;
+    overflow-y:hidden !important;
+    position: relative;
+     scroll-behavior: smooth !important;
+   
+ }
