@@ -56,7 +56,7 @@
                                             $imgp = $fetch['profileImg']; 
                                         }
                                         if($fetch['profileImg'] == ''){
-                                            echo '<img src="default.jpg">';
+                                            echo '<img src="uploads/profiles/default.jpg">';
                                         } else {
                                             echo '<img src="uploads/profiles/'.$fetch['profileImg'].'">';} ?> 
                                 </div> <hr>

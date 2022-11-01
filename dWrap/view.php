@@ -77,7 +77,7 @@
                             if(!$pfImg == ''){
                                 echo '<img src="uploads/profiles/'.$pfImg.'"><br>';
                             } else {
-                                echo '<img src = "default.jpg">';
+                                echo '<img src = "uploads/profiles/default.jpg"><br>';
                             }
                             //if logged in you are allowed to check another users profile
                             if(isset($_SESSION["userid"]) && $Uname != 'Deleted User'){ 

@@ -67,13 +67,13 @@
                     if($Uid == $id){ ?>
                    <div class="row  mx-4 upseBar">
                             <div class="col-md-6 py-2 justify-content-center text-center">
-                            <?php include  'options/searchOptionsPf.php';  ?>
+                            <?php include  'front/searchOptionsPf.php';  ?>
                         </div>
                             <div class="col-md-6 py-2  justify-content-center text-center">
                                 <form action ="includes/uploadImg" method="POST" enctype="multipart/form-data">
                                     <input type="file" name ="file" style="display:none" id="getFile"> 
                                     <label for="file" class="btn" onclick="document.getElementById('getFile').click()">Select Image</label>
-                                    <?php include "options\catOptions.php"; ?>
+                                    <?php include "front\catOptions.php"; ?>
                                    <button type="submit" name="submit">UPLOAD</button> 
                         
                                 </form>
@@ -99,7 +99,7 @@
                     else { // show only search bar to guests ?>
                     <div class="row  mx-4 upseBar">
                         <div class="col-md-12 py-2 justify-content-center text-center">  
-                            <?php include 'options/searchOptionsPf.php';  ?>
+                            <?php include 'front/searchOptionsPf.php';  ?>
                         </div>
                      </div> 
             <?php } ?>
@@ -107,7 +107,7 @@
                     <div class="row mx-4 d-flex justify-content-center text-center">
                         <div class="col-md-12 mt-3 py-4 wrapper-gallery">
                             <div>
-                                <?php include_once 'galleries/galleryPf.php';?>
+                                <?php include_once 'func/galleryPf.php';?>
                             </div>
                             <div class = "pagination d-flex justify-content-center text-center">
                                 <div class="pageBorder"> <?php include_once 'global/pagingPf.php';?> </div>
