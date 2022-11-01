@@ -30,7 +30,7 @@ Each category has the following permissions
 - Delete profiles of other users
 
 **Disclaimer**
-In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php,signup.php the appropriate email need to be given for the mail service to work
+In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php,signup.php the appropriate email address needs to be given for the mail service to work
 
 
 
