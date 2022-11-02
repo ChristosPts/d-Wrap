@@ -19,19 +19,14 @@ if(isset($_POST["submit"])){
     $select = mysqli_query($conn,"SELECT * FROM users WHERE usersId = '$id'");
     
     $fullPath = '../uploads/profiles/'.$imgp;
-    if(!unlink($fullPath)){
-        $URL="../profile?user=".$Uname."&page=1";
-        header('location:'.$URL.'');
-        exit();
-    }  
-    else {
+    
         $query = "UPDATE users SET profileImg = NULL WHERE usersId = '$id' ";
         mysqli_query($conn,$query);
    
         if($uType =='Admin' && $uid != $_SESSION["userid"]){
             
             $message = "Your account has been deleted for violating our terms of service";
-            $headers = "From: /*Enter your email here*/ \r\n";
+            $headers = "From: chpidevtest@gmail.com \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($uMail,'Account Deletion',$message,$headers);
@@ -45,7 +40,7 @@ if(isset($_POST["submit"])){
         else if($uType =='User' || ($uType =='Admin' && $uid == $_SESSION["userid"])){
             
             $message = "Your account has been deleted, we're sad to see you go";
-            $headers = "From: /*Enter your email here*/ \r\n";
+            $headers = "From: chpidevtest@gmail.com \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($uMail,'Account Deletion',$message,$headers);
@@ -55,7 +50,7 @@ if(isset($_POST["submit"])){
             include_once 'logout.inc.php';
         }   
     } 
-}
+ 
  
 else{
     header("location: ../index?page=1&error");
