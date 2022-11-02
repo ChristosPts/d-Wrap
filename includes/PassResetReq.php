@@ -51,7 +51,7 @@
             $message .= "<a href=".$url.">Reset Password</a>";
             $message .= "<p>If youd did not request a password reset you can ignore this email. </p>";
 
-            $headers = "From: dWrap </*Enter your email here*/> \r\n";
+            $headers = "From: dWrap <chpidevtest@gmail.com> \r\n";
             $headers .= 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
             mail($email,'dWrap Password Reset',$message,$headers);
