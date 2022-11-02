@@ -60,7 +60,7 @@ if (isset($_POST["submit"])){
         
             if($insert){
                 $message = "<a href='http://localhost/dWrap/verify?vkey=$vkey'>Verify Account</a>";
-                $headers = "From: /*Enter your email here*/ \r\n";
+                $headers = "From: chpidevtest@gmail.com \r\n";
                 $headers .= 'MIME-Version: 1.0' . "\r\n";
                 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
                 mail($email,'dWrap Email Verification',$message,$headers);
