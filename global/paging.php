@@ -9,10 +9,6 @@
     } else{
         echo "<a><</a>"; 
     }
-
-    /*for($x = 1; $x<= $totalPages; $x++){
-       echo "<a href=?page=".$x."&sorting=".$sorting."&orderAD=".$ordering."&category=".$categoryId.">".$x."</a>";
-    }*/
     
     if($page == 1){
         echo "<a class=activePage href=?page=1&sorting=".$sorting."&orderAD=".$ordering."&category=".$categoryId."><button>1</button></a>";
