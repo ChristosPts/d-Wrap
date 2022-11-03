@@ -32,5 +32,3 @@ Each category has the following permissions
 **Disclaimer**
 In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php and signup.php the appropriate email address needs to be given for the local mail service to work
 
-
-
