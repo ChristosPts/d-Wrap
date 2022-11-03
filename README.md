@@ -31,4 +31,8 @@ Each category has the following permissions
 
 **Disclaimer**
 In the includes folder in deleteImg.php, deleteProfile.php, PassResetReq.php and signup.php the appropriate email address needs to be given for the local mail service to work
-
+<br>
+## Live site
+http://68.183.209.218/dwrap/index.php?page=1 <br>
+**Disclaimer** 
+The mailing service is currently offline, functions like forgot my password will not work.
