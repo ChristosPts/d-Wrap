@@ -1,20 +1,14 @@
 <?php
- 
-//Get Heroku ClearDB connection information
-
- 
 /*Start session on every page letting users stay loged in*/
   session_start();
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
  
-      <link rel="shortcut icon" type ="image/png" href="uploads/favicon.png">
+     <link rel="shortcut icon" type ="image/png" href="uploads/favicon.png">
 
      <link rel="stylesheet" href="css\reset.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +20,6 @@
      <link rel="stylesheet" href="css\style.css">
      <link rel="stylesheet" href="css\style2.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
